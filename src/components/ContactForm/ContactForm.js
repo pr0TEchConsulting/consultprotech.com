@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const ContactForm = () => {
+const ContactForm = ({handleLeadForm}) => {
   const [formData, setFormData] = useState({
     name: '',
     countryCode: '91',
@@ -12,7 +12,10 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -32,7 +35,7 @@ const ContactForm = () => {
         setMessage('Your message has been sent successfully.');
         setFormData({
           name: '',
-          countryCode: '263',
+          countryCode: '91', // Changed to default code or desired code
           mobileNo: '',
           email: '',
         });
@@ -47,6 +50,9 @@ const ContactForm = () => {
   return (
     <div className="leadFormCardBox active">
       <h2>Connect With Our Team</h2>
+      <figure className="leadFormCrossBtn">
+        <img src="static/assets/images/cross.svg" onClick={handleLeadForm} className="img-responsive" alt="Close" />
+      </figure>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <input
@@ -60,11 +66,7 @@ const ContactForm = () => {
         </div>
         <div className="form-group">
           <div className="input-group">
-            <input
-              type="hidden"
-              value="homePage"
-              name="pageType"
-            />
+            <input type="hidden" value="homePage" name="pageType" />
             <div className="inputGroupAdd selectBox">
               <select
                 className="form-control countryCode"
@@ -75,6 +77,8 @@ const ContactForm = () => {
                 onChange={handleChange}
               >
                 <option value="91">IN (+91)</option>
+                <option value="263">ZW (+263)</option>
+                {/* Add more country codes as needed */}
               </select>
             </div>
             <input
@@ -99,10 +103,7 @@ const ContactForm = () => {
             onChange={handleChange}
           />
         </div>
-        <button
-          className="btn btn-primary submit"
-          type="submit"
-        >
+        <button className="btn btn-primary submit" type="submit">
           Submit
         </button>
       </form>
