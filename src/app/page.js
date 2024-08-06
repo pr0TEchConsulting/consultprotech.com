@@ -1,7 +1,5 @@
 "use client"
-import Image from 'next/image';
-import Head from 'next/head';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '@/components/Header/Header';
 import ContactForm from '@/components/ContactForm/ContactForm';
 
@@ -10,7 +8,16 @@ export default function Home() {
   const handleLeadForm = () => {
     setShowContactForm(prev => !prev)
   }
-  showContactForm ? document.body.classList.add('active') : document.body.classList.remove('active')
+  useEffect(() => {
+    if (showContactForm) {
+      document.body.classList.add('active');
+    } else {
+      document.body.classList.remove('active');
+    }
+    return () => {
+      document.body.classList.remove('active');
+    };
+  }, [showContactForm]);
   return (
     <>
 
