@@ -29,8 +29,6 @@ const ContactForm = ({handleLeadForm}) => {
         },
         body: JSON.stringify(formData),
       });
-
-      const result = await res.json();
       if (res.ok) {
         setMessage('Your message has been sent successfully.');
         setFormData({
