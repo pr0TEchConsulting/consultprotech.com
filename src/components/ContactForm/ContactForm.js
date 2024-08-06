@@ -13,7 +13,6 @@ const ContactForm = ({handleLeadForm}) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(name,value)
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -35,7 +34,7 @@ const ContactForm = ({handleLeadForm}) => {
         setMessage('Our Team Will Contact You Soon.');
         setFormData({
           name: '',
-          countryCode: '91', // Changed to default code or desired code
+          countryCode: '91',
           mobileNo: '',
           email: '',
           textMessage:''
