@@ -50,6 +50,7 @@ header nav ul li.btn.btn-primary.getStarted{padding:10px 30px;border-radius:6px;
 .leadFormCardBox .btn.btn-primary.submit{width:100%;padding:15px 30px;font-size:18px;}
 .leadFormCardBox figure.leadFormCrossBtn{position:absolute;top:15px;right:15px;width:24px;height:24px;cursor:pointer}
 .overlay{position:fixed;top:-48px;left:0;width:100%;bottom:0;background-color:#000000cc;transition:.3s;z-index:13}
+.error{border:1px solid #c30010;}
 @media screen and (max-width:1024px) {
 .container{width:100%}
 }
@@ -81,5 +82,6 @@ header nav{display:none}
 .readyToTakeBusinessNextLevel h1{font-size:22px;display:flex;display:-webkit-flex;align-items:center;text-align:center;max-width:300px;line-height:30px}
 .ourCleintReviewBox .reviewBox p{font-size:14px}
 .ourCleintReviewBox .reviewBox{margin-bottom:30px}
+.leadFormCardBox {width:100%;transform: translate(-50%, -27%);}
 }
            

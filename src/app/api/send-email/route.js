@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer';
 
 export async function POST(request) {
-  const { name, countryCode, mobileNo, email } = await request.json();
+  const { name, countryCode, mobileNo, email, textMessage } = await request.json();
 
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
@@ -19,6 +19,7 @@ export async function POST(request) {
       Country Code: ${countryCode}
       Phone Number: ${mobileNo}
       Email: ${email}
+      Message: ${textMessage}
     `,
   };
 
