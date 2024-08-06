@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
+    
     <header>
             <div className="leftLogo">
                <figure>
@@ -21,6 +22,8 @@ const Header = () => {
             </nav>
 
         </header>
+   
+    
   );
 };
 

@@ -10,9 +10,13 @@ export default function Home() {
   const handleLeadForm = () => {
     setShowContactForm(prev => !prev)
   }
+  showContactForm ? document.body.classList.add('active') : document.body.classList.remove('active')
   return (
     <>
-    <Header/>
+
+    <div className={showContactForm ? 'overlay' : ''}></div>
+
+    <Header />
     <div className="proTechHOmeBody">
             <div className="container">
                 <div className="topBanner">

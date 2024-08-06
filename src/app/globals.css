@@ -1,146 +1,85 @@
-*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-family:Arial;}:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{background: #121A21;overflow:hidden;overflow-y:auto}.errorMsg{border:1px solid #f10000 !important;}body.active{overflow:hidden}body,ul,ol,li,h1,h2,h3,h4,h5,h6,figure,p{padding:0;margin:0;list-style:none}body,p{font-family:arial;font-size:14px;line-height:22px;color:#333}a,.btn,button{text-decoration:none;outline:0}small{font-size:100%}.container{padding:0 15px;margin:0 auto;width:1170px}.container-fluid{padding:0 15px;max-width:1366px;margin:auto}.container-listing{padding:0 15px;max-width:100%;margin:auto}.container-full{padding:0 15px;max-width:100%;width:1170px;margin:auto}.img-responsive{max-width:100%;height:auto;max-height:100%}
-
-            .btn.btn-primary{background: #2C90E2;color:#fff;border-radius:8px;border:none;}
-            header{background:#121A21;border-bottom:1px solid #efefef;height:78px;box-shadow:0 2px 5px 0 hsla(0,0%,65%,.25);position:sticky;position:-webkit-sticky;top:0;display:flex;display:-webkit-flex;align-items:center;justify-content:space-between;z-index:11;border-bottom: 1px solid #253746;padding:0px 74px;}
-            header nav ul li{display:inline-flex;margin-right:30px;list-style:none;color:#fff;cursor:pointer;}
-            header nav ul li.btn.btn-primary.getStarted{padding:15px 20px;border-radius: 10px;font-size:18px;}
-            .leftLogo figure{width:166px;height:113px;}
-            .leftLogo figure img{width:100%;height:100%;}
-            .proTechHOmeBody{margin:60px 0px;}
-            .proTechHOmeBody .topBanner{position: relative;}
-            .proTechHOmeBody .topBanner figure{width: 100%;height:850px;border-radius:9px;overflow: hidden;position:relative;}
-            .proTechHOmeBody .topBanner figure::after{content:'';position:absolute;top:0;left:0;bottom:0;width:100%;height:100%;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .51) 29%, #0000);z-index:1;}
-
-            .proTechHOmeBody .topBanner figure{width:100%;height:100%;}
-            .proTechHOmeBody .topBanner .topBannerContent{position: absolute;left:25px;bottom: 25px;}
-            .proTechHOmeBody .topBanner .topBannerContent h1{font-size:58px;color:#fff;font-weight:bold;margin-bottom:20px;line-height:68px;}
-            .proTechHOmeBody .topBanner .topBannerContent p{font-size: 22px;color:#fff;font-weight: regular;margin-bottom:50px;line-height:30px;}
-            .proTechHOmeBody .topBanner .topBannerContent .btn.btn-primary.getStarted{font-size: 18px;color:#fff;font-weight: bold;padding:15px 30px;}
-            .ourServices{margin:60px 0px;}
-            .ourServices h2{font-size:38px;color:#fff;margin-bottom:30px;}
-            .ourServices .servicesCardBox{display:flex;display: -webkit-flex;gap:30px;}
-            .ourServices .servicesCardBox .servicesCard{border:1px solid #253746; padding:25px;border-radius: 8px;background: #1B2732;width:33%;}
-            .ourServices .servicesCardBox .servicesCard figure{width: 38px;height: 38px;margin-bottom:30px;}
-            .ourServices .servicesCardBox .servicesCard h2{font-size:24px;margin-bottom:15px;font-weight:bold;color:#fff;}
-            .ourServices .servicesCardBox .servicesCard p{font-size:18px;font-weight:normal;color:#94AFC5;line-height:22px;}
-            .homeFeatureBox{margin:30px 0px 60px 0px;display: flex;display: -webkit-flex;gap:20px;}
-            .homeFeatureBox .featureCard{width:33%;}
-            .homeFeatureBox .featureCard figure{width:100%;min-width: 100%;height:343px;margin-bottom:25px;border-radius:8px;overflow: hidden;}
-            .homeFeatureBox .featureCard figure img{width:100%;height:100%;}
-            .homeFeatureBox .featureCard h2{font-size:22px;color:#fff;font-weight:bold;margin-bottom: 10px;}
-            .homeFeatureBox .featureCard p{font-size: 16px;font-weight:normal;line-height:19px;color:#667B8B;}
-            .ourCleintReviewBox{margin:30px 0px}
-            .ourCleintReviewBox h1{font-size: 32px;font-weight:bold;color:#fff;margin-bottom:60px;}
-            .ourCleintReviewBox .reviewBox{margin-bottom:50px;}
-            .ourCleintReviewBox .reviewBox .ratingUserName{font-size:22px;color:#fff;font-weight:normal;margin-bottom:10px;}
-            .ourCleintReviewBox .reviewBox .ratingDate{font-size:14px;margin-bottom:15px;color:#667B8B;}
-            .ourCleintReviewBox .reviewBox .noOfStarGot{display: flex;display: -webkit-flex;gap:10px;align-items:center;}
-            .ourCleintReviewBox .reviewBox .noOfStarGot figure{width:20px;height:20px;display: flex;align-items: center;margin-bottom:30px;}
-            .ourCleintReviewBox .reviewBox .noOfStarGot figure img{width:100%;height:100%;}
-            .ourCleintReviewBox .reviewBox p{font-size: 18px;line-height: 23px;color:#fff;font-weight:normal;}
-            .readyToTakeBusinessNextLevel{display: flex;display: -webkit-flex;align-items: center;justify-content: center;flex-direction: column;}
-            .readyToTakeBusinessNextLevel h1{font-size:48px;font-weight: bold;color:#fff;margin:120px 0px 60px 0px;}
-            .readyToTakeBusinessNextLevel .btn.btn-primary.contactUs{font-size: 18px;color:#fff;padding:15px 40px;}
-            /* body.active{overflow: hidden;} */
-            .leadFormCardBox{    width: 100%;
-    max-width: 360px;
-    border-radius: 8px;
-    background: #fff;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    box-shadow: 0 3px 85px 0 #00000026;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    transition: .3s;
-    padding: 15px;
-    display: none;
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-family:Arial;}:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{background: #121A21;overflow:hidden;overflow-y:auto}.errorMsg{border:1px solid #f10000 !important;}body.active{overflow:hidden}body,ul,ol,li,h1,h2,h3,h4,h5,h6,figure,p{padding:0;margin:0;list-style:none}body,p{font-family:arial;font-size:14px;line-height:22px;color:#333}a,.btn,button{text-decoration:none;outline:0}small{font-size:100%}.container{padding:0 15px;margin:0 auto;width:1170px}.container-fluid{padding:0 15px;max-width:1366px;margin:auto}.container-listing{padding:0 15px;max-width:100%;margin:auto}.container-full{padding:0 15px;max-width:100%;width:1170px;margin:auto}.img-responsive{max-width:100%;height:auto;max-height:100%}textarea:focus, input:focus{outline:none;}.form-group.textAreaForm{height:60px}.form-group.textAreaForm textarea{height:100%;}
+.btn.btn-primary{background:#2C90E2;color:#fff;border-radius:8px;border:none;cursor:pointer}
+header{background:#121A21;border-bottom:1px solid #efefef;height:78px;box-shadow:0 2px 5px 0 hsla(0,0%,65%,.25);position:sticky;position:-webkit-sticky;top:0;display:flex;display:-webkit-flex;align-items:center;justify-content:space-between;z-index:11;border-bottom:1px solid #253746;padding:0 74px}
+header nav ul li{display:inline-flex;margin-right:30px;list-style:none;color:#fff;cursor:pointer}
+header nav ul li.btn.btn-primary.getStarted{padding:10px 30px;border-radius:6px;font-size:18px;margin-right:0}
+.leftLogo figure{width:126px;height:100%;display:flex;display:-webkit-flex}
+.leftLogo figure img{width:100%;height:100%;object-fit:cover}
+.proTechHOmeBody{margin:60px 0}
+.proTechHOmeBody .topBanner{position:relative}
+.proTechHOmeBody .topBanner figure{width:100%;height:850px;border-radius:9px;overflow:hidden;position:relative;width:100%;height:100%}
+.proTechHOmeBody .topBanner .topBannerContent{position:absolute;left:25px;bottom:25px}
+.proTechHOmeBody .topBanner .topBannerContent h1{font-size:58px;color:#fff;font-weight:700;margin-bottom:20px;line-height:68px}
+.proTechHOmeBody .topBanner .topBannerContent p{font-size:22px;color:#fff;font-weight:regular;margin-bottom:50px;line-height:30px}
+.proTechHOmeBody .topBanner .topBannerContent .btn.btn-primary.getStarted{font-size:18px;color:#fff;font-weight:700;padding:15px 30px}
+.ourServices{margin:60px 0}
+.ourServices h2{font-size:38px;color:#fff;margin-bottom:30px}
+.ourServices .servicesCardBox{display:flex;display:-webkit-flex;gap:30px}
+.ourServices .servicesCardBox .servicesCard{border:1px solid #253746;padding:25px;border-radius:8px;background:#1B2732;width:33%}
+.ourServices .servicesCardBox .servicesCard figure{width:38px;height:38px;margin-bottom:30px}
+.ourServices .servicesCardBox .servicesCard h2{font-size:24px;margin-bottom:15px;font-weight:700;color:#fff}
+.ourServices .servicesCardBox .servicesCard p{font-size:18px;font-weight:400;color:#94AFC5;line-height:22px}
+.homeFeatureBox{margin:30px 0 60px;display:flex;display:-webkit-flex;gap:20px}
+.homeFeatureBox .featureCard{width:33%}
+.homeFeatureBox .featureCard figure{width:100%;min-width:100%;height:343px;margin-bottom:25px;border-radius:8px;overflow:hidden}
+.homeFeatureBox .featureCard figure img{width:100%;height:100%}
+.homeFeatureBox .featureCard h2{font-size:22px;color:#fff;font-weight:700;margin-bottom:10px}
+.homeFeatureBox .featureCard p{font-size:16px;font-weight:400;line-height:19px;color:#667B8B}
+.ourCleintReviewBox{margin:30px 0}
+.ourCleintReviewBox h1{font-size:32px;font-weight:700;color:#fff;margin-bottom:60px}
+.ourCleintReviewBox .reviewBox{margin-bottom:50px}
+.ourCleintReviewBox .reviewBox .ratingUserName{font-size:22px;color:#fff;font-weight:400;margin-bottom:10px}
+.ourCleintReviewBox .reviewBox .ratingDate{font-size:14px;margin-bottom:15px;color:#667B8B}
+.ourCleintReviewBox .reviewBox .noOfStarGot{display:flex;display:-webkit-flex;gap:10px;align-items:center}
+.ourCleintReviewBox .reviewBox .noOfStarGot figure{width:20px;height:20px;display:flex;align-items:center;margin-bottom:30px}
+.ourCleintReviewBox .reviewBox .noOfStarGot figure img{width:100%;height:100%}
+.ourCleintReviewBox .reviewBox p{font-size:18px;line-height:23px;color:#fff;font-weight:400}
+.readyToTakeBusinessNextLevel{display:flex;display:-webkit-flex;align-items:center;justify-content:center;flex-direction:column}
+.readyToTakeBusinessNextLevel h1{font-size:48px;font-weight:700;color:#fff;margin:120px 0 60px}
+.readyToTakeBusinessNextLevel .btn.btn-primary.contactUs{font-size:18px;color:#fff;padding:15px 40px}
+.leadFormCardBox{width:100%;max-width:360px;border-radius:8px;background:#fff;position:fixed;left:50%;top:50%;box-shadow:0 3px 85px 0 #00000026;transform:translate(-50%,-50%);z-index:10;transition:.3s;padding:15px;display:none}
+.leadFormCardBox.active{display:block;z-index:15}
+.leadFormCardBox h2{font-size:22px;line-height:29px;color:#333;font-weight:900;margin-bottom:30px}
+.form-group{margin-bottom:15px}
+.form-control{padding:6px 12px;display:block;width:100%;height:40px;font-size:14px;color:#000;background:0;border-radius:5px;border:1px solid #ccc;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+.leadFormCardBox input{height:58px;border:1px solid #d6d6d6;border-radius:8px}
+.input-group .inputGroupAdd.selectBox{width:150px;position:relative}
+.input-group .inputGroupAdd.selectBox select{border-radius:5px 0 0 5px;border-right:0!important;height:100%;height:100%}
+.input-group{display:flex;width:100%}
+.input-group .inputGroupAdd+input{border-radius:0 5px 5px 0;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+.leadFormCardBox .btn.btn-primary.submit{width:100%;padding:15px 30px;font-size:18px;}
+.leadFormCardBox figure.leadFormCrossBtn{position:absolute;top:15px;right:15px;width:24px;height:24px;cursor:pointer}
+.overlay{position:fixed;top:-48px;left:0;width:100%;bottom:0;background-color:#000000cc;transition:.3s;z-index:13}
+@media screen and (max-width:1024px) {
+.container{width:100%}
 }
-.leadFormCardBox.active{display: block;z-index: 15;}
-.leadFormCardBox h2 {
-    font-size: 22px;
-    line-height: 29px;
-    color: #000;
-    font-weight: 900;
-    margin-bottom: 30px;
+@media screen and (max-width:768px) {
+header{padding:0 10px}
+header .leftLogo{width:200px}
+header nav ul li{margin-right:15px}
+header nav ul li.btn.btn-primary.getStarted{padding:8px 20px;font-size:16px}
+.ourServices .servicesCardBox{gap:15px}
+.ourServices .servicesCardBox .servicesCard h2{font-size:16px}
+.ourServices .servicesCardBox .servicesCard p{font-size:16px}
+.homeFeatureBox .featureCard h2{font-size:18px}
+.ourServices h2{font-size:28px}
+.homeFeatureBox .featureCard figure{height:232px}
+.readyToTakeBusinessNextLevel h1{font-size:28px;margin:40px 0 60px}
+.ourServices{margin-bottom:30px}
 }
-.form-group {
-    margin-bottom: 15px;
+@media screen and (max-width:540px) {
+header nav{display:none}
+.proTechHOmeBody{margin:30px 0}
+.proTechHOmeBody .topBanner{height:580px}
+.proTechHOmeBody .topBanner figure,.proTechHOmeBody .topBanner figure img{width:100%;height:100%;min-height:100%}
+.proTechHOmeBody .topBanner .topBannerContent h1{font-size:28px;line-height:38px}
+.proTechHOmeBody .topBanner .topBannerContent p{font-size:18px;line-height:23px}
+.ourServices .servicesCardBox{flex-wrap:wrap;gap:0}
+.ourServices .servicesCardBox .servicesCard{width:100%;margin-bottom:15px}
+.homeFeatureBox{flex-wrap:wrap}
+.homeFeatureBox .featureCard{width:100%}
+.readyToTakeBusinessNextLevel h1{font-size:22px;display:flex;display:-webkit-flex;align-items:center;text-align:center;max-width:300px;line-height:30px}
+.ourCleintReviewBox .reviewBox p{font-size:14px}
+.ourCleintReviewBox .reviewBox{margin-bottom:30px}
 }
-.form-control {
-    padding: 6px 12px;
-    display: block;
-    width: 100%;
-    height: 40px;
-    font-size: 14px;
-    color: #000;
-    background: 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-.leadFormCardBox input {
-    height: 58px;
-    border: 1px solid #d6d6d6;
-    border-radius: 8px;
-}
-.input-group .inputGroupAdd.selectBox {
-    width: 150px;
-    position: relative;
-}
-.input-group .inputGroupAdd.selectBox select {
-    border-radius: 5px 0 0 5px;
-    border-right: 0 !important;
-    height: 100%;
-}
-.input-group .inputGroupAdd.selectBox select {
-    height: 100%;
-}
-.input-group {
-    display: flex;
-    width: 100%;
-}
-.input-group .inputGroupAdd+input {
-    border-radius: 0 5px 5px 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-.leadFormCardBox .btn.btn-primary.submit{width:100%;padding:15px 30px;}
-.leadFormCardBox figure.leadFormCrossBtn{position: absolute;top:15px;right:15px;width:24px;height:24px;cursor:pointer}
-@media screen and (max-width:1024px){
-    .container{width:100%;}
-}
-@media screen and (max-width:768px){
-    header{padding:0px 10px}
-    header .leftLogo{width:200px;}
-    header nav ul li {margin-right:15px;}
-    header nav ul li.btn.btn-primary.getStarted {padding:8px 20px;font-size: 16px;}
-    .ourServices .servicesCardBox {gap:15px;}
-    .ourServices .servicesCardBox .servicesCard h2 {font-size: 16px;}
-    .ourServices .servicesCardBox .servicesCard p {font-size: 16px;}
-    .homeFeatureBox .featureCard h2 {font-size:18px;}
-    .ourServices h2 {font-size: 28px;}
-    .homeFeatureBox .featureCard figure {height:232px;}
-    .readyToTakeBusinessNextLevel h1 {font-size:28px;margin:40px 0px 60px 0px;}
-    .ourServices{margin-bottom:30px;}
-
-}
-@media screen and (max-width:540px){
-    header nav{display: none;}
-    .proTechHOmeBody {margin:30px 0px;}
-    .proTechHOmeBody .topBanner{height:580px;}
-    .proTechHOmeBody .topBanner figure, .proTechHOmeBody .topBanner figure img{width:100%;height:100%;min-height:100%;}
-    .proTechHOmeBody .topBanner .topBannerContent h1 {font-size:28px;line-height: 38px;}
-    .proTechHOmeBody .topBanner .topBannerContent p {font-size:18px;line-height:23px;}
-    .ourServices .servicesCardBox{flex-wrap: wrap;gap:0;}
-    .ourServices .servicesCardBox .servicesCard{width:100%;margin-bottom: 15px;}
-    .homeFeatureBox {flex-wrap: wrap;}
-    .homeFeatureBox .featureCard{width:100%;}
-    .readyToTakeBusinessNextLevel h1{font-size: 22px;display: flex;display: -webkit-flex;align-items: center;text-align: center;max-width:300px;line-height:30px;}
-    .ourCleintReviewBox .reviewBox p {font-size:14px;}
-    .ourCleintReviewBox .reviewBox {margin-bottom:30px;}
-
-}
+           

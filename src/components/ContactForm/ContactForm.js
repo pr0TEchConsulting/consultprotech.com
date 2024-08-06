@@ -101,6 +101,9 @@ const ContactForm = ({handleLeadForm}) => {
             onChange={handleChange}
           />
         </div>
+        <div className="form-group textAreaForm">
+        <textarea name="msg" id="leadtextArea" class="form-control propertyName" rows="2" placeholder="I would like more information regarding..."></textarea>
+        </div>
         <button className="btn btn-primary submit" type="submit">
           Submit
         </button>
