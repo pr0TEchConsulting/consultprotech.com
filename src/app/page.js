@@ -33,7 +33,7 @@ export default function Home() {
                     <div className="topBannerContent">
                         <h1>We help Business thrive with technology.</h1>
                         <p>Pro Tech Consultancy is your one stop shop for all things tech. wheather you need to build a custom software solution design a new brand or create an AI chatbot, We have got you covered.</p>
-                        <button className="btn btn-primary getStarted">Get Started</button>
+                        <button className="btn btn-primary getStarted" onClick={handleLeadForm}>Get Started</button>
                     </div>
                 </div>
                 <div className="ourServices">
