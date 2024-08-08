@@ -8,7 +8,7 @@ const ContactForm = ({handleLeadForm}) => {
     email: '',
     textMessage: ''
   });
-
+  const [popup, setPopup] = useState(false)
   const [message, setMessage] = useState('');
 
   const handleChange = (e) => {
@@ -31,7 +31,6 @@ const ContactForm = ({handleLeadForm}) => {
         body: JSON.stringify(formData),
       });
       if (res.ok) {
-        setMessage('Our Team Will Contact You Soon.');
         setFormData({
           name: '',
           countryCode: '91',
@@ -40,6 +39,7 @@ const ContactForm = ({handleLeadForm}) => {
           textMessage:''
         });
         handleLeadForm()
+        setPopup(true)
       } else {
         setMessage('Failed to send your message.');
       }
@@ -116,9 +116,9 @@ const ContactForm = ({handleLeadForm}) => {
       {message && <p>{message}</p>}
     </div>
 
-    <div className='thankYouPopUp active'>
+    {popup ? <div className='thankYouPopUp active'>
     <figure className="leadFormCrossBtn">
-        <img src="static/assets/images/cross.svg" onClick={handleLeadForm} className="img-responsive" alt="Close" />
+        <img src="static/assets/images/cross.svg" onClick={()=> setPopup(false)} className="img-responsive" alt="Close" />
       </figure>
       <div className='formSubmissionContent'>
         <figure className='formSubmission'>
@@ -126,7 +126,7 @@ const ContactForm = ({handleLeadForm}) => {
         </figure>
         <p>Thank You For Filling the form. Our Team Will Contact You Soon.</p>
       </div>
-    </div>
+    </div> : ''}
     </>
   );
 };
