@@ -37,7 +37,7 @@ export default function Home() {
                         <button className="btn btn-primary getStarted" onClick={handleLeadForm}>Get Quote</button>
                     </div>
                 </div>
-                <div className="ourServices">
+                <div className="ourServices" id="services">
                     <h2>Our Services</h2>
                     <div className="servicesCardBox">
                         <div className="servicesCard">
@@ -63,7 +63,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="homeFeatureBox">
+                <div className="homeFeatureBox" id="work">
                     <div className="featureCard">
                         <figure>
                             <img src="static/assets/images/companyWebsite.png" className="img-responsive" />
@@ -85,13 +85,13 @@ export default function Home() {
                             <img src="static/assets/images/healthCareDashboard.png" className="img-responsive" />
                         </figure>
                         <h2>HealthCare Dashboard</h2>
-                        <p>A USer-friendly dashboard for managing patient data.</p>
+                        <p>A User-friendly dashboard for managing patient data.</p>
 
                     </div>
 
                 </div>
-                <div className="ourCleintReviewBox">
-                    <h1>what Our Clients Say</h1>
+                <div className="ourCleintReviewBox" id="testimonials">
+                    <h1>What Our Clients Say</h1>
                     <div className="reviewBox">
                         <div className="ratingUserName">Sarah Johnson</div>
                         <div className="ratingDate">June 12, 2023</div>
@@ -159,7 +159,7 @@ export default function Home() {
                         <p>We hired Pro Tech Consultancy to create a new brand identity for cur company, including a new logo, color scheme, and visual style. They did an excellent job capturing our vision and bringing it to life. The final designs were modern versatile, and agroc with our brand values. We're thrilled with the results and would definitely recommend them for graphic design services</p>
                     </div>
                 </div>
-                <div className="readyToTakeBusinessNextLevel">
+                <div className="readyToTakeBusinessNextLevel" id='contact'>
                     <h1>Ready To Take Your Business to the Next Level ?</h1>
                     <button className="btn btn-primary contactUs" onClick={handleLeadForm}> Contact Us</button>
                 </div>
