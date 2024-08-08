@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const ContactForm = ({handleLeadForm}) => {
+const ContactForm = ({handleLeadForm, setPopup}) => {
   const [formData, setFormData] = useState({
     name: '',
     countryCode: '91',
@@ -8,7 +8,6 @@ const ContactForm = ({handleLeadForm}) => {
     email: '',
     textMessage: ''
   });
-  const [popup, setPopup] = useState(false)
   const [message, setMessage] = useState('');
 
   const handleChange = (e) => {
@@ -115,18 +114,6 @@ const ContactForm = ({handleLeadForm}) => {
       </form>
       {message && <p>{message}</p>}
     </div>
-
-    {popup ? <div className='thankYouPopUp active'>
-    <figure className="leadFormCrossBtn">
-        <img src="static/assets/images/cross.svg" onClick={()=> setPopup(false)} className="img-responsive" alt="Close" />
-      </figure>
-      <div className='formSubmissionContent'>
-        <figure className='formSubmission'>
-          <img src='static/assets/images/thankyou.png'/>
-        </figure>
-        <p>Thank You For Filling the form. Our Team Will Contact You Soon.</p>
-      </div>
-    </div> : ''}
     </>
   );
 };

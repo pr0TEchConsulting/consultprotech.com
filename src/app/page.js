@@ -5,6 +5,7 @@ import ContactForm from '@/components/ContactForm/ContactForm';
 
 export default function Home() {
   const [showContactForm, setShowContactForm] = useState(false);
+  const [popup, setPopup] = useState(false)
   const handleLeadForm = () => {
     setShowContactForm(prev => !prev)
   }
@@ -165,7 +166,18 @@ export default function Home() {
              
             </div>
          </div>
-          {showContactForm && <ContactForm handleLeadForm={handleLeadForm}/>}
+          {showContactForm && <ContactForm setPopup={setPopup} handleLeadForm={handleLeadForm}/>}
+          {popup ? <div className='thankYouPopUp active'>
+            <figure className="leadFormCrossBtn">
+                <img src="static/assets/images/cross.svg" onClick={()=> setPopup(false)} className="img-responsive" alt="Close" />
+            </figure>
+            <div className='formSubmissionContent'>
+                <figure className='formSubmission'>
+                <img src='static/assets/images/thankyou.png'/>
+                </figure>
+                <p>Thank You For Filling the form. Our Team Will Contact You Soon.</p>
+            </div>
+            </div> : ''}
     </>
   );
 }
