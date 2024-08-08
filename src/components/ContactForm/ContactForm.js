@@ -49,6 +49,7 @@ const ContactForm = ({handleLeadForm}) => {
   };
 
   return (
+    <>
     <div className="leadFormCardBox active">
       <h2>Connect With Our Team</h2>
       <figure className="leadFormCrossBtn">
@@ -114,6 +115,19 @@ const ContactForm = ({handleLeadForm}) => {
       </form>
       {message && <p>{message}</p>}
     </div>
+
+    <div className='thankYouPopUp active'>
+    <figure className="leadFormCrossBtn">
+        <img src="static/assets/images/cross.svg" onClick={handleLeadForm} className="img-responsive" alt="Close" />
+      </figure>
+      <div className='formSubmissionContent'>
+        <figure className='formSubmission'>
+          <img src='static/assets/images/thankyou.png'/>
+        </figure>
+        <p>Thank You For Filling the form. Our Team Will Contact You Soon.</p>
+      </div>
+    </div>
+    </>
   );
 };
 

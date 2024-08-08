@@ -17,7 +17,7 @@ const Header = () => {
                     <li>Insights</li>
                     <li>About</li>
                     <li>Contact</li>
-                    <li className="btn btn-primary getStarted">Services</li>
+                   
                 </ul>
             </nav>
 

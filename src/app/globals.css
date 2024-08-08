@@ -37,8 +37,8 @@ header nav ul li.btn.btn-primary.getStarted{padding:10px 30px;border-radius:6px;
 .readyToTakeBusinessNextLevel{display:flex;display:-webkit-flex;align-items:center;justify-content:center;flex-direction:column}
 .readyToTakeBusinessNextLevel h1{font-size:48px;font-weight:700;color:#fff;margin:120px 0 60px}
 .readyToTakeBusinessNextLevel .btn.btn-primary.contactUs{font-size:18px;color:#fff;padding:15px 40px}
-.leadFormCardBox{width:100%;max-width:360px;border-radius:8px;background:#fff;position:fixed;left:50%;top:50%;box-shadow:0 3px 85px 0 #00000026;transform:translate(-50%,-50%);z-index:10;transition:.3s;padding:15px;display:none}
-.leadFormCardBox.active{display:block;z-index:15}
+.leadFormCardBox, .thankYouPopUp{width:100%;max-width:360px;border-radius:8px;background:#fff;position:fixed;left:50%;top:50%;box-shadow:0 3px 85px 0 #00000026;transform:translate(-50%,-50%);z-index:10;transition:.3s;padding:15px;display:none}
+.leadFormCardBox.active, .thankYouPopUp.active{display:block;z-index:15}
 .leadFormCardBox h2{font-size:22px;line-height:29px;color:#333;font-weight:900;margin-bottom:30px}
 .form-group{margin-bottom:15px}
 .form-control{padding:6px 12px;display:block;width:100%;height:40px;font-size:14px;color:#000;background:0;border-radius:5px;border:1px solid #ccc;-webkit-appearance:none;-moz-appearance:none;appearance:none}
@@ -51,6 +51,16 @@ header nav ul li.btn.btn-primary.getStarted{padding:10px 30px;border-radius:6px;
 .leadFormCardBox figure.leadFormCrossBtn{position:absolute;top:15px;right:15px;width:24px;height:24px;cursor:pointer}
 .overlay{position:fixed;top:-48px;left:0;width:100%;bottom:0;background-color:#000000cc;transition:.3s;z-index:13}
 .error{border:1px solid #c30010;}
+.thankYouPopUp figure.leadFormCrossBtn{position: absolute;right:15px;top:15px;cursor:pointer;}
+.formSubmissionContent{display: flex;display: -webkit-flex;align-items: center;flex-direction: column;}
+.formSubmissionContent p{    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px 0px;
+    line-height: 26px;
+    font-weight: 600;
+    max-width: 282px;}
 @media screen and (max-width:1024px) {
 .container{width:100%}
 }
@@ -82,6 +92,6 @@ header nav{display:none}
 .readyToTakeBusinessNextLevel h1{font-size:22px;display:flex;display:-webkit-flex;align-items:center;text-align:center;max-width:300px;line-height:30px}
 .ourCleintReviewBox .reviewBox p{font-size:14px}
 .ourCleintReviewBox .reviewBox{margin-bottom:30px}
-.leadFormCardBox {width:100%;transform: translate(-50%, -27%);}
+.leadFormCardBox, .thankYouPopUp {width:100%;transform: translate(-50%, -27%);}
 }
            
